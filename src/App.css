@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+.HomeScreen {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.LeftNavbar {
+  width: 300px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul li {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.links {
+  text-decoration: none;
+  color: black;
+}
+.centerSection {
+  width: 800px;
+  background-color: rgb(228, 228, 228);
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  padding: 3px;
+}
+.addTweet {
+  background-color: white;
+  padding: 10px;
+}
+.addTitle {
+  border: none;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.addTitle h6 {
+  font-weight: 800;
+}
+.iconDiv {
+  float: left;
+  color: #1da1f3;
+  font-size: 24px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#TweetBtn {
+  border-radius: 25px;
+  float: right;
+  background-color: #1da1f3;
+  border: none;
+}
+
+#LeftTweet {
+  border-radius: 25px;
+  width: 100%;
+  background-color: #1da1f3;
+  border: none;
+}
+.formDiv {
+  padding: 20px;
+}
+.tweet {
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.userName {
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 3px;
+  border-radius: 25px;
+  background-color: lightgray;
+}
+.date {
+  font-weight: 400;
+  font-size: 10px;
+}
+.SearchSection {
+  width: 400px;
+  padding: 20px;
+}
+.searchDiv {
+  background-color: #f4f8fb;
+  margin-top: 20px;
+  padding: 10px;
+}
+.SearchSection input {
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  background-color: rgb(226, 223, 223);
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchedTweet {
+  border: 1px solid rgb(177, 174, 174);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: justify;
 }
